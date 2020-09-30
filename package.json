@@ -5,12 +5,13 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "tailwind": "tailwind build ./src/assets/css/tailwind.css -c ./tailwind.js -o ./src/assets/css/output.css"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^3.0.0-0",
-    "vue-class-component": "^8.0.0-0"
+    "firebase": "^7.21.1",
+    "vue": "^3.0.0-0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.33.0",
@@ -23,6 +24,7 @@
     "@vue/eslint-config-typescript": "^5.0.2",
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0-0",
+    "tailwindcss": "^1.8.10",
     "typescript": "~3.9.3"
   }
 }
